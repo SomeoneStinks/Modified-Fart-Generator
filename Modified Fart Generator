@@ -1,0 +1,84 @@
+package com.Isaac;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter the first letter of your name and the day of the month you \nwere born to find out what kind of fart you are! Ex: I 5:");
+
+        String letter = scan.next().toUpperCase();
+        byte days = scan.nextByte();
+
+        HashMap<String, String> letters = new HashMap<>();
+
+        letters.put("A", "Faintly");
+        letters.put("B", "Nicely");
+        letters.put("C", "Embarrassingly");
+        letters.put("D", "Disgustingly");
+        letters.put("E", "Immensely");
+        letters.put("F", "Very");
+        letters.put("G", "Wretched");
+        letters.put("H", "Horridly");
+        letters.put("I", "Squeaky");
+        letters.put("J", "Poisonously");
+        letters.put("K", "Luxuriously");
+        letters.put("L", "Thunderously");
+        letters.put("M", "Explosively");
+        letters.put("N", "Repulsively");
+        letters.put("O", "Melodiously");
+        letters.put("P", "Devastatingly");
+        letters.put("Q", "Strangely");
+        letters.put("R", "Beautifully");
+        letters.put("S", "Terrifically");
+        letters.put("T", "Hideously");
+        letters.put("U", "Gorgeously");
+        letters.put("V", "Ridiculously");
+        letters.put("W", "Interestingly");
+        letters.put("X", "Phenomenally");
+        letters.put("Y", "Slightly");
+        letters.put("Z", "Troublesomely");
+
+        HashMap<Byte, String> day = new HashMap<Byte, String>();
+
+        day.put((byte) 1, "Stinky");
+        day.put((byte) 2, "Smelly");
+        day.put((byte) 3, "Deadly");
+        day.put((byte) 4, "Strong");
+        day.put((byte) 5, "Old");
+        day.put((byte) 6, "Moist");
+        day.put((byte) 7, "Wet");
+        day.put((byte) 8, "Toxic");
+        day.put((byte) 9, "Sour");
+        day.put((byte) 10, "Foggy");
+        day.put((byte) 11, "Dried-Out");
+        day.put((byte) 12, "Silent");
+        day.put((byte) 13, "Resounding");
+        day.put((byte) 14, "Abrupt");
+        day.put((byte) 15, "Fragrant");
+        day.put((byte) 16, "Timid");
+        day.put((byte) 17, "Proud");
+        day.put((byte) 18, "Pungent");
+        day.put((byte) 19, "Shy");
+        day.put((byte) 20, "Thunderous");
+        day.put((byte) 21, "Audible");
+        day.put((byte) 22, "Full");
+        day.put((byte) 23, "Dank");
+        day.put((byte) 24, "Damp");
+        day.put((byte) 25, "Gentle");
+        day.put((byte) 26, "Harsh");
+        day.put((byte) 27, "Stark");
+        day.put((byte) 28, "Vigorous");
+        day.put((byte) 29, "Solid");
+        day.put((byte) 30, "Soft");
+        day.put((byte) 31, "Feeble");
+
+
+        System.out.print("You are a " + letters.get(letter) + " " + day.get(days) + " Fart");
+
+  }
+  }
